@@ -1,0 +1,63 @@
+h1. Project VorteX README
+
+                      Welcome to Project VorteX.
+
+
+Copyright (C) Project VorteX   (http://www.vortex-db.com)
+Copyright (C) SkyFireEMU       (http://www.projectskyfire.org)
+Copyright (C) Cactus           (http://www.cactusemu.com)
+Copyright (C) TrinityCore      (http://www.trinitycore.org)
+Copyright (C) MaNGOS           (http://www.getmangos.com)
+Copyright (C) Arkania          (http://www.arkania.net)
+
+  Project VorteX DB is free software; you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation version 3 of the License.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program; if not, write to the Free Software
+  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+  In addition, as a special exception, the Project VorteX
+  gives permission to link the code of its release of VorteX DB and its contents
+  for distribution but you must obey the GNU General Public License
+  in all respects for all of the code used.  If you
+  modify this file, you may extend this exception to your version of the
+  file, but you are not obligated to do so.  If you do not wish to do
+  so, delete this exception statement from your version.
+
+Project VorteX is a MMORPG DB written in SQL. It is completely 
+open source, and is community supported. It is derived
+from Project Silvermoon and CCDB Project which constructed compatible
+DB's for the Skyfire Massive Network Game Object Server and is based
+on the code of there project with extensive changes over time to optimize, 
+improve and cleanup the original structure and content at the same time as
+improving the ingame mechanics and functionality. 
+
+For further information on the Project VorteX DB, please visit the
+project website at http://www.vortex-db.com/.
+
+For further information on the Project SkyFireEMU, please visit the
+project website at http://www.projectskyfire.org/.
+
+For further information on the TrinityCore project, please visit the
+project website at http://www.TrinityCore.org/.
+
+For further information on the MaNGOS project, please visit the
+project website at http://www.getmangos.com/.
+
+For further information on the Cactus project, please visit the
+project website at http://www.cactusemu.com/.
+
+For further information on the Arkania project, please visit the
+project website at http://www.arkania.net/.
+
+Use the installer to install the DB to your MySQL server, remember to select
+the version which applies to the core which you are using.
+
+                    http://www.vortex-db.com
