@@ -1,0 +1,2129 @@
+An explanation of fixes applied to R19A of Project VorteX_406 11/02/13
+
+Due to the team spending alot of time on our 434 db this release is 1. a little late and 
+2. not very big - for this we apologise and we thank you all for your patience
+
+Zones
+The Goblin quest lines have had a complete overhaul with a list too long to post here
+I suggest you roll a goblin and check it out for yourselves.
+
+There have been a few other minor quest fixes, plus some npc corrections.
+
+Apologies for the lack of information, we hope you understand with many developers on holidays and
+those of us left spread between the 406 and 434 databases.
+
+Updates from Arkania have NOT been added to this revision. 
+We will work through their updates and release R19B when the process is complete.
+
+Credits to Billykitty, Lorset, Sulbutx and Sally 
+
+-- ZAMARA
+
+-------------------------------------------------------------------
+A listing of fixes applied to R18A of Project VorteX_406 30/10/12
+
+This revision is being released a little earlier than usual due tot he fact that
+we have added the halloween event stuff into the DB (would be a bit silly to release it 
+after halloween wouldnt it).  Again We have included some great stuff from Arkania
+
+Fixes from ARKANIA
+[QUEST] To the Cliffs
+[QUEST] Get to the Gyrochoppa!
+[QUEST] Precious Cargo
+[QUEST] Warchiefs Revenge
+[QUEST/SPAWNS/SMARTAI] Cluster Cluck
+[QUEST] Echeyakee
+[NPC] KTC Train-a-Tron Deluxe
+[QUEST] Summit of Fate
+[QUEST] A Goblin in Shark's Clothing
+[QUEST] Forced to Watch from Afar
+[QUEST] Trading Up
++ Various spawn corrections in Outlands, Maelstrom, Twilight Highlands
+
+Fixes from Project VorteX
+[NPC] Surristrasz
+[NPC] Elementium Monstrosity
+[EVENT] Event 12 - Hallow's End GOs
+[QUEST] The Fight Continues
+[NPC/SAI] High Tinker Mekkatorque
+[NPC/SAI] Thermaplugg's Brag-bot
+[NPC/SAI] Hinkles Fastblast
+[NPC/SAI Doc Cogspin
+[NPC] Thrall
+[QUEST] The Prophecy of Akida
+[QUEST] The Ring of Blood Quest Chain
+[NPC/SAI] Deviate Stinglash
+[NPC/SAI] Deviate Creeper
+[NPC/SAI] Deviate Slayer
+[NPC/SAI] Deviate Stalker
+[NPC/SAI] Biletoad
+[NPC/SAI] Boahn <Druid of the Fang>
+[NPC/SAI] Devouring Ectoplasm
+[NPC/SAI] Murk Spitter
+[NPC/SAI] Assistant Greely
+[NPC/SAI] Wild Clucker Egg
+[GO] Apple Bob
+[GO] Candy Bucket 
+[QUEST] Hallow's End Treats for Jesper!
+[QUEST] Necessary Roughness
+[NPC] Coach Crosscheck
+[NPC/SAI] Steamwheedle Shark
+[QUEST] Ogrezonians in the Mood
+
+Also a huge bunch of fixes and corrections done for the following:
+SoundAccept and SoundTurnIn in quest_template
+Conditions Errors
+SAI Errors
+Spawns
+Duplicates
+
+
+HUGE thank you to Billykitty, Sulbutx and Sally fir their continued hard work
+
+Also a big thank you to cybekp, Biglad and Ladel from Arkania for their great work that got added to this revision.
+
+Please ensure you have an up to date revision of Arkcore as many of the updates from the Arkania repo have also been added.
+
+- CATACRUNCH
+-------------------------------------------------------------------
+
+A listing of fixes applied to R17A of Project VorteX_406 14/10/12
+This revision see's quite a bit of work which was done jointly between a few Arkdb devs and VorteX db devs. Lets hope this is a sign of a good working relationship between the two projects.
+
+Fixes from ARKANIA (Some with some support from Project VorteX dev Billykitty):
+[QUEST] Weed Whacker
+[QUEST] The Great Bank Heist
+[QUEST] Pirate Party Crashers
+[QUEST] Capturing The Unknown
+[QUEST] Life Savings
+[QUEST] Infrared = Infradead
+[NPC] Doc Zapnozzle
+[NPC] Morbid Carcass
+[NPC] Vault Geist
+[NPC] Erunak Stonespeaker
+[NPC] Engineer Hexascrub
+[NPC] Bulwark Dreadguard (WIP)
+[NPC] Surwich Warden (WIP)
+[NPC] Teraptor Hatchling
+[GO] Crate of Tools
+
+Fixes from Project VorteX:
+[QUEST] Fletchers Lost and Found
+[QUEST] Life of the Party
+[QUEST] The Lich King's Command
+[QUEST] The Gift That Keeps On Giving
+[QUEST] Nature's Reprisal
+[QUEST] A Dish Best Served Huge
+[QUEST] If He Cannot Be Turned
+[QUEST] Goblin Escape Pods
+[QUEST] A Present for Lila
+[QUEST] Nibbler! No!
+[QUEST] Ogrezonians in the Mood
+[QUEST] The Latest Fashion!
+[NPC] General Lightsbane
+[NPC] Claims Adjuster-Undermine Insurance Unlimited
+[NPC] Corrupting Adherent
+[NPC] Alton Redding
+[NPC] Geargrinder Gizmo
+[NPC] Lieutenant Horatio Laine
+[NPC] Felicia Maline
+[NPC] Goblin Survivor
+[NPC] Dead Goblin
+[NPC/SAI] Doc Zapnozzle
+[NPC/SAI] Stonard Warlock
+[NPC/SAI] Grolvitar the Everburning
+[NPC/SAI] Boss Cho'gall
+[NPC/SAI] Shadow Sprite
+[GOB] Heros Call Board-Exodar
+
+Fishing Loot fixed for zones:
+- Westfall
+- Tirisfal Glades
+- Silverpine Forest
+- Loch Modan
+- Dun Morogh
+
+Other Updates:
+- Extensive cleanup in tables:
+guild_xp_for_level
+quest_poi_points
+waypoint_data
+creature_classlevelstats
+event_scripts
+gameobject_scripts
+gossip_scripts
+npc_spellclick_spells
+spell_enchant_proc_data
+spell_scripts
+
+- modify tables to allow higher phases
+(this update also needs you to do a manual update on your character DB,
+Check UPDATE/CHARACTER folder for "[R16] CHARACTER - phaseMask update.sql" and run it manually).
+
+Many fixes made to the "creature_classlevelstats" table
+and many more minor fixes/updates...
+
+Huge thanks to Zamara, Billykitty, Sally and Sulbutx for their great work in this revision.
+Also a special thank you to Biglad, Label and Redneo from Arkania and Xanis from Magic-WoW/Frost-Emu.
+
+- CATACRUNCH
+-------------------------------------------------------------------
+
+A listing of fixes applied to R16B of Project VorteX_406 01/10/12
+
+VorteX Hotfixes:
+[NPC] Tobias Mistmantle
++ many minor creature_template adjustments
+
+Fixes From Arkania:
+[Flight Master Fix] Amber Ledge to Coldarra flight path on gossip
+[GO Loot Fix] Charred Wreckage
+[GO Loot] Fizzcrank Spare Parts
+[QUEST] Druid of the Claw
+[QUEST] Cleansing Witch Hill
+[QUEST] In Case of Emergency
+[QUEST] Spirits of Stonemaul Hold
+[QUEST] Reinforcements Denied
+[QUEST] The Lost Ones
+[QUEST] Journey to Honor Hold
+[QUEST] Journey to Thrallmar
+[GOBJECT] Hero's Call Board, Exodar
+[GOBJECT] Dragonmaw Weapon Axe
+[GOBJECT] Master Control Pump
+[GOBJECT] Siege Engine Scrap
+[GOBJECT] Bael Modan Artifact
+[GOBJECT] Portals in Deepholm
+
+Special thank you to Ladel, Redneo and biglad from Arkania for their great work in these fixes.
+And as always a big thank you to Billykitty (Project VorteX) for the adjustments/corrections to the above fixes.
+
+- CATACRUNCH
+-------------------------------------------------------------------
+
+A listing of fixes applied to R16A of Project VorteX_406 30/09/12
+
+This Revision includes NEW db installers for Linux and Windows users.
+
+Also fixes for the following:
+
+[NPC] Child of Volcanoth
+[NPC] Oostan Headhunter
+[NPC] Goblin Zombie
+[NPC] Oomlot Warrior
+[NPC] Jungle Cat
+[NPC] Commander Arrington
+[NPC] Alexi Silenthowl
+[NPC] Darkblade Cyn
+[NPC] Skymaster Brightdawn
+[NPC] Infernal Invader
+[NPC] Bonechewer Riding Wolf
+[NPC] Bat Rider Guard
+[NPC] Removed Movement from Vrykul Landing Ship
+[NPC] Weakened Mosshoof Stag
+[NPC] Spiny Lizard
+[NPC] Robo-Chick
+[NPC] Rabid Blisterpaw
+[NPC] Glasshide Gazer
+[NPC] Gusting Vortex
+[NPC] Glasshide Basilisk
+[NPC] Fire Roc
+[NPC] Thundermar War Gryphon
+[NPC] Untamed Gryphon
+[NPC] Mullan Gryphon
+[NPC] Vermillion Skyscreamer
+[NPC] Nostrastrasz
+[NPC] Highbank Marine
+[NPC] Dead Employee
+[NPC] Bomb-Throwing Monkey
+[NPC] Spirit Healer 6491
+[NPC] Valiona
+[NPC] Theralion
+[NPC] Quicksilver
+[NPC] Dread Captain DeMeza
+[NPC] Twilight Flame Caller
+[NPC] Rom'ogg Bonecrusher
+[NPC] Corla, Herald of Twilight
+[NPC] Karsh Steelbender
+[NPC] Beauty
+[NPC] Ascendant Lord Obsidius
+[NPC] Finkle Einhorn
+[NPC] Runty
+[NPC] Searing Guardian
+[NPC] Raz the Crazed
+[NPC] Twilight Zealot
+[NPC] Bilgewater Bruiser
+[NPC] Bambala Headhunter
+[NPC] Flame Crest Bruiser
+[NPC] Sunveil Scout
+[NPC] Blam Turret
+[NPC] Stonard Ogre
+[NPC] Stonevault Wanderer
+
+[NPC&NPC/SAI] Mad Prisoner
+[NPC&NPC/SAI] Crazed Mage
+[NPC&NPC/SAI] Lucky
+[NPC&NPC/SAI] Conflagration
+[NPC&NPC/SAI] Buster
+[NPC&NPC/SAI] Incendiary Spark
+[NPC&NPC/SAI] Forgemaster Pyrendius
+[NPC&NPC/SAI] Bound Flames
+[NPC&NPC/SAI] Defiled Earth Rager
+[NPC&NPC/SAI] Evolved Twilight Zealot
+[NPC&NPC/SAI] Bellows Slave
+[NPC&NPC/SAI] Dark Iron Laborer
+[NPC&NPC/SAI] Angered Earth
+[NPC&NPC/SAI] Molten Tormentor
+[NPC&NPC/SAI] Twilight Obsidian Borer
+[NPC&NPC/SAI] Twilight Torturer
+[NPC&NPC/SAI] Shadow of Obsidius
+[NPC&NPC/SAI] Twilight Sadist
+[NPC&NPC/SAI] Twilight Element Warden
+[NPC&NPC/SAI] Twilight Flame Caller
+
+[QUEST] Freezing The Pipes
+[QUEST] We All Scream for Ice Cream... and then Die!
+[QUEST] Monkey Business
+
+[ITEM LOOT] Jaggal Clam
+[ITEM LOOT] Bloated Smallfish
+[ITEM LOOT] Battered Chest
+
+[GOBJECT] Refrigeration Pipe
+[GOBJECT] Crate of Tools
+
+More fishing loot fixed for zones: 
+- Winterspring 
+- The Hinterlands
+- Teldrassil
+- Moonglade
+- Hillsbrad Foothills
+- Desolace
+- Isle of Quel'Danas
+- Ghostlands
+- Eastern Plaguelands
+- Northern Barrens
+- Mulgore
+- Felwood
+- Durotar
+- Isle of Quel'Danas
+- Arathi Highlands
+- Azuremyst Isle
+- Badlands
+- Bloodmyst Isle
+- Burning Steppes
+- Darkshore
+- Deadwind Pass
+- Duskwood
+- Elwynn Forest
+- Northern Stranglethorn
+- Redridge Mountains
+- Searing Gorge
+- Swamp of Sorrows
+- The Cape of Stranglethorn
+- Tol Barad
+- Vashj'ir
+- Western Plaguelands
+- Wetlands
+
+[EVENT] Pirates Day
+
+Massive re-phase done in Gilneas
+
++ many other minor corrections/fixes
+
+Thanks to Zamara, Billykitty and Sally for their awesome contributions towards this release.
+Also a big thank you to Mikadmin, cybekp, Biglad, ladel and Redneo (Arkania) for the fixes they developed.
+
+
+- CATACRUNCH
+-------------------------------------------------------------------
+
+
+A listing of fixes applied to R15B of Project VorteX_406 16/09/12
+
+DB Error Log cleanup
++ other fixes 
+
+-- FULL CLEAN WORLD DB INSTALL ONLY, NO UPDATE FILE (sorry)
+
+- CATACRUNCH
+-------------------------------------------------------------------
+
+
+A listing of fixes applied to R15A of Project VorteX_406 15/09/12
+
+
+[QUEST] Rut'theran Village
+[QUEST] The Liquid Fire of Elune
+[QUEST] Take Back What's Ours
+[QUEST] You Can't Take 'Em Alone
+[QUEST] Preparations
+[QUEST] Proving Pit
+[QUEST] The Embalmer's Revenge (WIP)
+[QUEST] The Rebel Lords Arsenal
+
+[NPC] Admiral Nightwind
+[NPC] Rabid Grizzly
+[NPC] Blighted Elk
+[NPC] Wretched Ghoul
+[NPC] Twilight Enforcer
+[NPC] Twilight Recruit
+[NPC] Twilight Assassin
+[NPC] Twilight Slave
+[NPC] Ysera
+[NPC] Docile Island Boar
+[NPC] Scarlet Corpse
+[NPC] Mogh the Dead (WIP)
+[NPC] Tsul'Kalu (WIP)
+[NPC] Dragonmaw Guard (WIP)
+[NPC] Crithto
+[NPC&NPC/VENDOR] Larisse Pembraux
+[NPC&NPC/VENDOR] Liliana Emberfrost
+[NPC] Forsaken Infantry
+[NPC] Half-Eaten Coalpelt Bear
+[NPC] Gwen Armstead
+[NPC] Gilneas Spirit Healers
+[NPC] Sister Almyra
+[NPC] Felicia Maline
+[NPC] Hiri'watha Deathguard (WIP)
+[NPC] Revantusk Watcher
+[NPC] Wildhammer Sentry (WIP)
+[NPC&NPC/SAI] Bulwark Dreadguard (WIP)
+[NPC&NPC/SAI] Surwich Warden (WIP)
+[NPC&NPC/SAI] Okril'lon Defender
+[NPC&NPC/SAI] Nethergarde Defender (WIP)
+[NPC&NPC/SAI] Deathguard Elite (WIP)
+[NPC&NPC/SAI] Dreadguard
+[NPC&NPC/SAI] Westfall Brigade Guard
+
+[NPC/SAI] High Priestess Azil
+[NPC/SAI] Lord Darius Crowley
+[NPC/SAI] Horrid Abomination
+
+[NPC/VENDOR] Moorat Longstride
+[NPC/VENDOR] Kulwia
+[NPC/VENDOR] Muurald
+[NPC/VENDOR] Trapper Kiefer
+[NPC/VENDOR] Brett "Coins" McQuid
+[NPC/VENDOR] Grawnal
+[NPC/VENDOR] Barshuk Heavyhammer
+[NPC/VENDOR] Kawnie Softbreeze
+[NPC/VENDOR] Marjak Keenblade
+[NPC/VENDOR] Felicia Doan
+[NPC/VENDOR] Thaddeus Webb
+[NPC/VENDOR] Supply Master Broog
+
+[ITEM LOOT] Reinforced Locked Chest
+[ITEM LOOT] Tightly Sealed Trunk
+[ITEM LOOT] Iron Bound Trunk
+[ITEM LOOT] Mithril Bound Trunk
+[ITEM LOOT] Bloated Mud Snapper
+[ITEM LOOT] Watertight Trunk
+[ITEM LOOT] Message in a Bottle
+[ITEM LOOT] Dented Crate
+[ITEM LOOT] Waterlogged Crate
+[ITEM LOOT] Small Chest
+[ITEM LOOT] Small Locked Chest
+[ITEM LOOT] Sturdy Locked Chest
+[ITEM LOOT] Sealed Crate
+[ITEM LOOT] Bloated Catfish
+[ITEM LOOT] Big-Mouth Clam
+[ITEM LOOT] Bloated Trout
+[ITEM LOOT] Heavy Crate
+[ITEM LOOT] Ironbound Locked Chest
+[ITEM LOOT] Bloated Redgill
+[ITEM LOOT] Bloated Salmon
+
+[CONDITION] Horn of Tal''doren
+[CONDITION] Spell - Toss Keg
+
+More fishing loot fixed for zones: Ashenvale, Aszhara, Blasted Lands, Dustwallow Marsh, 
+								   Feralas, Mount Hyjal, Ruins of Gilneas, Silithus, 
+								   Southern Barrens, Stonetalon Mountains, Tanaris, 
+								   Thousand Needles, Twilight Highlands, Uldum, Un'Goro Crater
+
+
+Teleport location to "Uldum" fixed
+
+Added the guid's to game_event_gameobject so they are not seen year round
+
+"Winter Veil event" items where dropping with no conditions, Now fixed
+
+Duskwood Cosmetic Fixes - Fixed movement for "critters" Roach and Dusk Spiderling
+Also relocated floating Grave Moss
+
+tons of "creature_template" Questitem1 & Questitem2 additions from wdb cache added
+
+Many "DB Error log" errors fixed
+
+Also a complete "quest_template" dump which has had massive ammounts of "RequiredRaces", "PrevQuestId", "NextQuestId", "OfferRewardText", "RequestItemsText" added 
+(All quest fixes above were applied to the quest_template table prior to dumping)
+
+-- FULL CLEAN WORLD DB INSTALL ONLY, NO UPDATE FILE
+
+Thanks to Zamara, Billykitty, Sally and Nooblet for their outstanding work towards this revision :)
+and also to TrinityDB
+
+- CATACRUNCH
+-------------------------------------------------------------------
+
+A listing of fixes applied to R14_B (HOTFIX RELEASE) of Project VorteX_406 03/09/12
+
+FIXES FROM ARKANIA 
+Spells: partially fix Arcane Missiles, need more work.
+Spells: Harnessed Shadows.
+Spells: Will of the Necropolis
+Spells: Partial scripted spell 86340 (Summon Tempest) used by Grand vizir Ertan located in The Vortex Pinnacle.
+Currency
+Lost Island Graveyard patch + Spirit Healer
+
+FIXES FROM VORTEX
+[QUEST] Save Krennan Aranas
+[NPC] Mary Oxworth 
+[NPC] Sergeant Cleese
+[NPC] Defiant Troll
+[GO] Holiday Snow
+[LOOT] Giant Darkwater Clam
+[LOOT] Reinforced Crate
+[LOOT] Darkwater Clam
+[LOOT] Small Barnacled Clam
+[NPC/SAI] Wailing Weed
+[ZONE/SAI] The Hinterlands
+
+Re-done "QuestGiverPortrait" entries in "quest_template"
+Fix ahbot commands and remove bad commands
+AuctioneerGUID fix for AHBot
+
+More fishing loot sorted for zones: Zul'Drak, Wintergrasp, The Storm Peaks, Netherstorm, Icecrown, Howling Fjord,
+                                    Grizzly Hills, Dragonblight, Borean Tundra, 
+
+PLEASE NOTE: THERE IS ALSO A CHARACTER DB SQL WHICH YOU WILL ALSO NEED TO MANUALLY INSTALL, THIS WILL FIX "GUILD NEWS"
+
+This revision is a HOTFIX release.
+
+Thanks to Billykitty, Sally, Arkania Devs, Cooler and B4dm00n for their contributions for the HOTFIX.
+									
+- CATACRUNCH
+-------------------------------------------------------------------
+
+A listing of fixes applied to R14_A of Project VorteX_406 27/08/12
+
+As its been a few weeks since our last revision release, the team at Project VorteX
+thought we would give you a nice treat.  R14-A is packed with some great fixes,
+corrections and additions for the following:
+
+[NPC] Sinestra 
+[NPC] Valiona - normal 10-25 and heroic 10-25
+[NPC] Theralio - normal 10-25 and heroic 10-25
+[NPC] Cho'gall - normal 10-25 and heroic 10-25
+[NPC] earthen ring gryphon
+[NPC] Russell Brower
+[NPC] Lirastrasza
+[NPC] Ephram Hardstone
+[NPC] Una Kobuna
+[NPC] Sassy Hardwrench
+[NPC] Elestren
+[NPC] Avrus Illwhisper
+[NPC] Mottled Doe
+[NPC] Hungry Thistle Bear
+[NPC] Marie Holdston
+
+[NPC/SAI] Narkk
+[NPC/SAI] Celestine of the Harvest
+[NPC/SAI] Loren the Fence
+[NPC/SAI] Bossy
+[NPC/SAI] Heb'Drakkar Headhunter
+[NPC/SAI] Heb'Drakkar Striker
+[NPC/SAI] Rabid Grizzly
+[NPC/SAI] Blighted Elk
+[NPC/SAI] Corla, Herald of Twilight
+[NPC/SAI] Karsh Steelbender
+[NPC/SAI] Beauty
+[NPC/SAI] Ascendant Lord Obsidius
+[NPC/SAI] High Priestess Azil
+[NPC/SAI] Devout Follower
+[NPC/SAI] Nestlewood Owlkin
+
+[ITEM/LOOT] Curious Crate 
+[ITEM/LOOT] Inscribed Scrollcase
+[ITEM/LOOT] Heavy Supply Crate
+
+[GOBJECT] Adarrah's Jewelry Box
+[GOBJECT] Stormwind Locker
+[GOBJECT] Sacred Wildhammer Ale
+
+[QUEST] The Crucible of Carnage (Quest chain fixed)
+[QUEST] Cementing Our Victory
+[QUEST] The Perfect Poultice
+[QUEST] Anything But Water
+[QUEST] Enter the dragon Queen
+[QUEST] The Ape Hunter's Slave (Quest chain fixed)
+[QUEST] Sholazar Basin (Quest chain fixed)
+[QUEST] All's Well (Quest chain fixed)
+[QUEST] Bathed in Light
+[QUEST] Tendril from Below
+[QUEST] Looks Like a Tauren Pirate to Me
+[QUEST] The Liquid Fire of Elune
+[QUEST] Good Help is Hard to Find
+[QUEST] Rolling with My Homies
+[QUEST] Lions for Lambs
+[QUEST] Ascendant Lord Obsidius
+[QUEST] Do My Eyes Deceive Me?
+[QUEST] Followers and Leaders
+[QUEST] The Twilight Forge
+[QUEST] What Is This Place?
+[QUEST] They Sent Assassins
+[QUEST] The Rear is Clear
+
+[ZONE QUEST CHAINING] KEZAN
+[ZONE QUEST CHAINING] AZUREMYST
+
+[RECIPE] Haunted Herring
+
+[PROFS] FISHING fixed in Dalaran, Ironforge, Orgrimmar, Eversong Woods, Hellfire Peninsula, 
+        Zangarmarsh, Terokkar Forest, Shadowmoon Valley, Nagrand (also a couple other missing fishing locations added - Sources Skyfire DB/ArkDB)
+[PROFS] ENCHANTING - Reworked from 0 - 510
+[PROFS] BLACKSMITHING - Reworked from 0 - 500
+
+CONDITIONS table re-worked
+
+StarsRest Teleportation co-ords fixed
+
+Twilight Highlands NPC's are now visible for players, NPC's were in wrong Phase
+
++ many DB Error Log corrections and very minor fixes/corrections
+
+HUGE thanks to Zamara, Billykitty, Sulbutx, Sally and Nooblet for ther awesome contributions towards this revision.
+
+Thanks to Skyfire and Arkania for the fishing info.
+
+- CATACRUNCH
+-------------------------------------------------------------------
+
+A listing of fixes applied to R13_B of Project VorteX_406 05/08/12
+
+
+DB/SAI: added scripts for Tirisfal Glades zone
+DB/SAI: added Westfall zone scripts
+
+[QUEST] - Monitoring the Rift - Winterfin Caverns
+[QUEST] - The Bleeding Ore=
+[QUEST] - Emergency Protocol - Section 8.2- Paragraph D 11796
+[QUEST] - Ritual Materials
+[QUEST] - Twilight Skies
+[NPC] - Garrosh Hellscream
+[NPC] - Ornak
+[NPC] - Friz Groundspin [Flight Master]
+
+Plus a lot of DB cleanup (still in progress)
+
+Thanks to Zamara, Billykitty, Sulbutx and Sally for their great work.
+Also to Cooler-SAI and to the devs over at Arkainia.
+
+
+-------------------------------------------------------------------
+
+A listing of fixes applied to R13_A of Project VorteX_406 31/07/12
+
+Plenty of changes added to this revision (sorry forgot to do the DB revision updater).
+
+[SAI] added Duskwood zone scripts
+[SAI] added Lost City of the Tol'vir Dungeon Normal/Heroic mode
+[SAI] added Maghteridon's Lair Raid scripts
+[SAI] added Gruuls' Lair Raid scripts
+[SAI] added scripts for Blasted Lands zone
+[SAI] new scripts for Thousand Needles added
+
+[GAMEOBJECT] Eye of Twilight
+[GAMEOBJECT] Jade Crystal Cluster
+[GAMEOBJECT] Bear's Paw
+[GAMEOBJECT] Mud-Crusted Ancient Disc
+
+[NPC] Servant of Therazane
+
+[QUEST] Power Over the Tides
+[QUEST] The Darkscale Warlord
+[QUEST] Breaking the Bonds
+[QUEST] Seeds of Life
+[QUEST] Warm Welcome
+[QUEST] Far from the Nest
+[QUEST] No Accounting for Taste
+[QUEST] A Squad of Your Own
+[QUEST] A Special Surprise 28650
+[QUEST] Against the Wind 13542
+[QUEST] The Eye of All Storms
+
+[CRASH HOTFIX] Making a Worgen crashes worldserver
+
++ Corrections made in the DK Starting Zone and Worgen Starting Zone
++ Many, many other corrections made throughout the DB
+
+Also a whole heap of updates from the Arkcore "sql\updates" section of their repo checked
+and added.
+
+Thanks to Zamara and Billykitty for their awesome work as usual towards this revision.
+Also to Cooler-SAI and to the devs over at Arkainia.
+
+-------------------------------------------------------------------
+
+A listing of fixes applied to R12_A of Project VorteX_406 11/07/12
+
+This revision will now work with latest versions of Arkcore from Arkania
+
+Another huge batch of fixes went into this one including:
+Crutial Structure updates to both Character and World DB's to enable the DB to work with Arkcore
+Wintergrasp features added
+*_relation corrections
+SAI corrections
+Quest Chain corrections
+DK start srea corrections
+
+IMPORTANT INFORMATION
+-- Coinfigs for AHbot thats built into Arkcore are in the worldserver.conf in Arkcore
+-- Please do a Complete clean World DB install, revision update feature not present in this revision
+-- Please manually install the "CHARACTER_DB_UPDATE.sql" which can be found in the "Manual_Updates" folder
+   into your character db for structure updates. (you may want to backup your guild information first)
+
+Thanks to Billykitty, Zamara and members of Arkania for help towards this revision.
+-------------------------------------------------------------------
+
+A listing of fixes applied to R11_A Project VorteX_406 30/06/12
+
+Because this fix contained over 50,000 lines with over 16,000 individual sqls 
+we are unable to give an exact listing of fixes applied, so here is a rundown
+
+A number of issues fixed from the bug tracker including 
+	- creature and gameobject spawns, 
+	- creature and gameobject _template corrections
+	- creatute and gameobject _loot_template corrections
+	- SAI 
+	- fishing_loot_template
+	- Many quests
+Quest chains corrected for DK's and Zul'Drak
+a few minor fixes for Archeology
+More work done on the DB Error log
+Some more minor fixes in Gilneas
+Thousands of *_questrelation and *_involvedrelation fixes
+
+Thanks to the following for their awesome work towards this revision:
+Catacrunch, Zamara, Sulbutx, Billy Kitty, Sally and ArkCore
+-------------------------------------------------------------------
+
+A listing of fixes applied to R10_A of Project VorteX_406 01/06/12
+
+More EventAI - SAI
+Many more NPC Spawn corrections, creature_addon and waypoints added
+Loot fixes 
+	- fishing
+	- gameobject
+	- creature
+	- disenchanting
+ScriptNames
+	- creatures
+	- gameobjects
+	- spells
+Kezan 
+	- quests
+	- gossip
+	- SAI
+Shadowglen - quest chain fixed
+All core_world sql's and core_char sql's applied 
+
+Plus loads more obsolete items, quests and other random data removed
+
+Thanks to the following for their awesome work towards this revision:
+Zamara, Sulbutx, Billy Kitty
+---------------------------------------------------------------
+
+A listing of fixes applied to R09-A of Project VorteX_406 12/05/12
+
+More EventAI - SAI
+Many Class Spells corrected
+2000+ NPC spawn corrections 
+Vendor Corrections
+Game Object Corrections
+Vehicle Corrections
+Quest Corrections
+Obsolite data removed
+
+Thanks to John, Zamara, Sulbutx for their hard work for this revision.
+
+---------------------------------------------------------------
+
+A listing of fixes applied to R08-A of Project VorteX_406 21/04/12
+
+Night Elf Starting Area Redo
+Battle for Gilneas City Redo
+Stormglen Redo
+Mineral Ammount Spawns
+TheVortexPinnacle
+TheStonecore
+Blackwing_Descent
+ThroneOfTheTides
+ThroneOfTheFourWinds
+LostCityOfTheTolvir
+HallsOfOrigination
+GrimBatol
+BastionOfTwilight
+
+Many Class Spells Fixed
+Alchemy Spells 425-525
+
+[GO] Earthshrine Portals Fixed
+[GO] Suspended Tesla
+[GO] Warning Lights
+[GO] Decontamination Control Unit
+[GO] Gnomeregan Machine
+[GO] Steam Cleansing
+[GO] Dithers Plague Drum
+[GO] Gnomeregan Large Tesla
+
+[QUEST] Take Back What's Ours 
+[QUEST] Life's Finer Pleasures
+[QUEST] Liberation Day
+[QUEST] Slowing the Inevitable
+[QUEST] Control
+[QUEST] Pinned Down
+[QUEST] Leader of the Pack
+[QUEST] A scarlet Letter
+[QUEST] Find Baron Longshore
+[QUEST] Weaken The Ramparts
+[QUEST] Seek Out Neltharaku
+
+[NPC] Forsaken catapult
+[NPC] Stephanos
+
+[SAI] Gnome survivor
+
+-- Start of the EventAI to SAI Conversion
+[SAI] Forest Spider
+[SAI] Mine Spider
+[SAI] Skeletal Warrior
+[SAI] Thuros Lightfingers
+[SAI] Infernal
+[SAI] Riverpaw Taskmaster
+[SAI] Morgaine the Sly
+[SAI] Harvest Reaper
+[SAI] Riverpaw Gnoll
+[SAI] Riverpaw Mongrel
+[SAI] Riverpaw Brute
+[SAI] Murloc Coastrunner
+[SAI] Murloc Tidehunter
+[SAI] Blackrock Sergeant
+[SAI] Smolderthorn Assassin 
+[SAI] Charscale Commander
+[SAI] Charscale Elite
+[SAI] Charscale Assaulter
+[SAI] Baltharus the Warborn
+[SAI] Charscale Invoker
+[SAI] Onyx Flamecaller
+[SAI] Saviana Ragefire
+[SAI] General Zarithrian
+[SAI] Blood Beast
+
+
+Plus lots of other minor fixes 
+
+Thanks to the following for their awesome work towards this revision:
+Zamara, Sulbutx, Billy Kitty, Sharq (Project VorteX Staff)
+and 
+Paladmaster, Sentence, Nanaki, gaal (Arkinia)
+
+
+---------------------------------------------------------------
+
+A listing of fixes applied to R07-B of Project VorteX_406 09/04/12
+
+Warlock Pets - SP scaling
+
+
+Thanks to Billykitty, Zamara, Shadowmist, Sulbutx and Nooblet (Project VorteX), Mikadmin, Cooler, Szone (From Arkania), Thor (From Skyfire) and to Trinity Project for their contributions towards this revision
+
+---------------------------------------------------------------
+
+A listing of fixes applied to R07-A of Project VorteX_406 07/04/12
+
+[NPC] Vyral the Vile
+[NPC] High Priestess Lorthuna
+[NPC] Gwen Armstead
+[NPC] Hoboair
+[NPC] Desmond Chadsworth Faction Fix
+[NPC] Horrid Abomination
+[NPC] Myriam Spellwaker (Corrections)
+[NPC] Swabbies Mop Spawns And Spell
+[NPC] Hot Rod now has correct vehicle ID
+[NPC/SAI] Enslaved Bandit
+[NPC/SAI] Evol Fingers now shoots Shadowbolt at Fizz Lighter
+[NPC/SAI] Fizz Lighter now shoots Fireball at Evol Fingers
+[NPC/SAI] Maxx Avalanche now shoots Lightning Bolt at Fizz and Evol
+
+[SAI] Dire Maul Dungeon scripts
+[SAI] Azshara zone scripts
+[SAI] Southern Barrense zone scripts
+[SAI] Dustwallow Marsh
+[SAI] Feralas
+
+[GO] Fireplume Shroom
+[GO] Bloated Kelp Bulb
+[GO] Stormwind Locker
+[GO] Sunken Cargo
+[GO] Crate of Mandrake Essence
+[GO] Spawn cellar door in Gilneas City Military District 195621
+[GO] Stormwind Spear
+
+[ITEM] Bigmouth Clam
+
+[QUEST/SAI] The Lone Hunter
+[QUEST/SAI] Taking Care of Business
+[QUEST] A meeting with Fate
+[QUEST] Save the Children
+[QUEST] You Can't Take 'Em Alone
+[QUEST] Last Stand 14222 - Use correct npc Northgate Rebel 41015 not 36057 inside cathedral for start script
+[QUEST] Rejuvenating Touch (Night Elf)
+[QUEST] Smoked Desert Dumplings
+[QUEST] Verdant Sigil
+[QUEST] Hallowed Sigil
+[QUEST] Forbidden Sigil
+[QUEST] Simple Sigil
+[QUEST] Learning New Techniques
+[QUEST] Etched Sigil
+[QUEST] A Rogue's Advantage (Night Elf)
+[QUEST] Arcane Missiles (Night Elf)
+[QUEST] Encrypted Sigil
+[QUEST] A Woodsman's Training (Night Elf)
+[QUEST] Healing for the Wounded (Night Elf)
+[QUEST] Mercy for the Lost
+[QUEST] The Foreman
+[QUEST] Only the Beginning
+[QUEST] Assault on the Rotbrain Encampment
+[QUEST] By the Skin of His Teeth (Better spawn rate)
+
+Gilneas/Duskhaven/Exodar Re-worked (only a few minor bugs left)
+Some Corrections for DK Start Zone (just need to address the issue with the phase's and a couple of quests)
+Alchemy Spells 0-450 
+Removed some 4.2.0 content
+Unit Class Fixes
+More Obsolites removed
+Faction Fixes
+Creature_text Fix
+Stormglen Quest Chain Fixes
+Hyjal Portal Corrections
+Hundreds of missing creatures added
+
+... and many more monor fixes applied.
+
+Thanks to Billykitty, Zamara, Sulbutx and Nooblet (Project VorteX), Mikadmin, Cooler, Szone (From Arkania), Thor (From Skyfire) and to Trinity Project for their contributions towards this revision
+
+---------------------------------------------------------------
+
+A listing of fixes applied to R06-A of Project VorteX_406 03/31/12
+
+A lot of hard work has went into this revision so the following is a brief
+discription of what changes are in this revision.
+
+
+CORRECTIONS:
+Loot Template
+Pickpocket Loot
+Earthcaller Yevaa 
+A Couple of Random Horde Start Fixes
+A Couple of Worgen Start Fixes
+Some Draenei Zone Quests
+Troll Quest Templates Redone
+Remade Playercreateinfo Action
+Gnome Start Area
+
+ADDITIONS:
+Beacon of Light
+Valaatu -Mage Trainer
+High Priestess Jeklik
+Many LW Items 0-500
+LW Trainers - Darkbrand Set
+LW Trainers - Tsunami Set
+Lots Missing Quests Added
+Tons of Pickpocket loot Added
+
+SAI:
+SAI pack_ Cooler_406-02_Milestone Dungeons Mystery
+
+HUNDREDS OF ERRORS FIXED IN THE FOLLOWING TABLES OT TABLE CONTENTS:
+Creature Template - Factions
+Gossip Scripts
+Quest Template
+Teference Loot Template
+Smart Scripts
+Specialflags
+Spell Linked Spell
+
+REMOVALS:
+Obsolete Creatures
+Obsolete LW Trainers
+Obsolete Quests
+Items
+Gama Objects
+
+Also German Locales Added To The Installer
+
+Thanks to Zamara, Sulbutx, JOHN2308S, SHARQ and Mikadmin, Cooler from Arkania for their awesome work.
+---------------------------------------------------------------
+
+A listing of fixes applied to R05-A of Project VorteX_406 03/23/12
+
+-- [GO] Blackwing descent elevator
+-- [GO] Wildhammer Food Stores
+-- [NPC] Talrendis
+-- [NPC] Malicion
+-- [NPC] Adarrah 
+-- [Q] Gimme Shelter!
+-- [NPC] Admiral Dvorek
+-- [NPC] Aggra
+-- [NPC] Agitated Green Sand Crab
+-- [NPC] Akasha
+-- [NPC] Alliance Assault Volunteer
+-- [NPC] Alliance Cannon
+-- [NPC] Alliance Lookout
+-- [NPC] Alliance Prisoner
+-- [NPC] Alliance Sea-Scout
+-- [NPC] Anemone Frenzy
+-- [NPC] Anissa Matherly
+-- [NPC] Ascendant of the Deeps
+-- [NPC] Ascended Zealot
+-- [NPC] Azsh'ir Abyss Priestess
+-- [NPC] Azsh'ir Archaean 
+
+SAI Fixes
+-- Auchindoun: Sethekk Halls scripts Dungeon Normal/Heroic
+-- Caverns of Time: The Black Morass scripts Dungeon Norma/Heroic
+-- Hellfire Citadel: The Blood Furnace scripts Dungeon Normal/Heroic
+-- Hellfire Citadel: The Shattered Halls scripts Dungeon Normal/Heroic
+-- Tempest Keep: The Mechanar scripts Dungeon Normal/Heroic
+-- Blackfathom Deeps scripts (UPDATED)
+-- Blackrock Depths scripts (UPDATED)
+-- Maraudon scripts (UPDATED)
+-- The Stockade scripts (UPDATED)
+-- Auchindoun: Shadow Labyrinth scripts Dungeon Normal/Heroic
+
+Corrections
+-- Eydis Darkbane
+-- Fjola Lightbane
+-- Terenas Menethil
+-- Thalorien Dawnseeker's Remains
+-- Shadow Trap
+-- Spirit Bomb
+-- Tainted Earthgrab Totem
+-- Corrupted Nova Totem
+-- Azure Scalebane
+-- Thunderhead Hippogryph
+-- Minion of Omen
+-- Giant Spotlight
+-- Shadowfiend
+-- Withered Corpse
+-- Earthbind Totem
+-- Fel Spirit
+-- Shatterhorn
+-- Emerald Drake
+-- Amber Drake
+-- Ruby Drake
+-- Trapdoor Crawler
+-- Arcane Beam
+-- Matthias Lehner
+-- Argent Lightwielder
+-- Crucible of Souls
+-- Thalorien Dawnseeker's Remains
+-- Corrupted Nova Totem
+-- Stormwind Investigator
+-- Worgen Alpha
+-- Worgen Runt
+-- Northgate Rebel
+-- Scourge Gryphon
+-- Scourge Sky Darkener
+-- Abandoned Mail
+-- Frenzied Stalker
+-- Bloodfang Stalkers
+-- In Search of Bravo Company
+-- Breaking Out is Hard to Do
+-- Twice Removed
+-- Maywiki
+-- Keep the Fires Burning
+
+Plus many corrections in Gilneas, Obsilite Quests removed
+
+Thanks to Zamara, Sulbutx and Mikadmin, Cooler and zxelf from Arkania for their awesome work.
+---------------------------------------------------------------
+
+A listing of fixes applied to R04-B of Project VorteX_406 03/12/12
+
+-- [GO] Wildhammer Food Stores
+-- [SAI] Hellfire Citadel/Ramparts
+-- [SAI] Hillsbrad Foothills
+-- [NPC] Multi horde_Vendor dalaran (Phase Correction)
+-- [GO]Big-Mouth Clam (Loot Fix)
+-- [GO] Keg of Thundermar Ale
+-- [QUEST] Arcane Missiles
+
+-- Factions for Darnassus and Gilneas 
+-- gossip_menu_option typeo fix
+
+French/Spanish Locales added to the installer
+
+Full Character DB Overhaul (for all cores)
+
+More DB Clean-up
+
+Thanks to Zamara, Sulbutx and Mikadmin, Cooler from Arkania for their awesome work.
+---------------------------------------------------------------
+
+A listing of fixes applied to R04-A of Project VorteX_406 03/11/12
+
+** Too many changes made to this revision to list so here is a brief listing **
+
+A COMPLETE GUID CLEANUP/RE-ORDER,
+
+MASSIVE CLEANUP OF THE FOLLOWING:
+creature_template
+creature_loot_template
+item_template
+MovementType
+quest_template
+smart_scripts
+spell_group
+
+HUNDREDS OF QUESTS, GOBJECTS, ITEMS CORRECTED/ADDED,
+
+HUGE LISTING OF SAI FIXES ADDED TO 5 ZONES,
+
+
+Thankx to Zamara, Sulbutx, Wazy, Tiburan, John2308 and ArkDB's Cooler, Billykitty, Mikeadmin for their contributions towards this revision.
+
+---------------------------------------------------------------
+
+A listing of fixes applied to R03-A of Project VorteX_406 03/03/12
+
+Added Uber SAI pack for the following zones:
+Felwood, 
+Darkshore,
+Ashenvale,
+Un'Goro Crater,
+Mulgore,
+Crystalsong Forest,
+Desolace,
+Coilfang Reservoir: The Steamvault Dungeon,
+Coilfang Reservoir:The Slave Pens Dungeon,
+Coilfang Reservoir: The Underborg Dungeon,
+Gundrak Dungeon Normal/Heroic,
+Halls of Lightning Dungeon,
+Elwyn Forest, 
+Northshire Abby, 
+
+MISC-FIXES
+Quest - Stinky's Escape, 
+Quest - Never Again!, 
+Quest - Counterattack!, 
+SAI - Lets see what you've got Zanzil, 
+Quest - A Song of Wind and Water, 
+Game Object - Handbombs, 
+Quest - By Hook Or By Crook, 
+Kezan Graveyards sorted, 
+Quest/Spawns - Chicken Party, 
+Conditions - Billy Goat Blaster,
+Game Object - Black Forge,
+Vendor Fix - Guild page Horde,
+Vendor fix - Wrong Extended costs,
+Vendor - Zulna,
+Corrections - Bloodfang Stalker,
+Correction - SamanthaBuckley,
+NPC - Well Watcher Solanian,
+Corrections - Gilneas Factions,
+Page Text - Turning the Other Cheek,
+Game Object - Missing Parts,
+Quest - Zul'Mamwe Mambo,
+Quest - The Mosh'Ogg Bounty,
+Quest - Speaking with Nezzliok,
+Game Object - Kaja'mite Chunk,
+Battle for Gilneas City quest chain, 
+Stormglen quest chain, 
+Quest - Introductions Are in Order, 
+Quest - Stranded at the Marsh, 
+Quest - Save the Children, 
+
+Many Duplicates (NPC's, Game Objects)removed
+
+Thankx to Zamara, Sulbutx, ArkDB (Cooler, Billykitty, Mikeadmin) for their contributions towards this revision.
+
+---------------------------------------------------------------
+
+A listing of fixes applied to R02-A of Project VorteX_406 28/02/12
+
+Another SAI fix pack added, 
+Many of the following added or fixed:
+Quests
+Game Objects
+Npc's
+Vendors
+
+No SKYFIRE updates to add with this revision.
+ 
+Thanks to Zamara, Sulbutx for their continued hard work also Arkdb devs
+--------------------------------------------------------------
+
+A listing of fixes applied to R01-B of Project VorteX_406 24/02/12
+
+HUGE SAI bundle added, 
+Masses of obsolite quests removed
+Some Obsolite NPC's removed
+Gilneas Graveyard fix
+Some Missing GObjects added
+
+*REBASE SPECIFIC FIXES*
+conditions table adjustments
+
+Skyfire updates added to the DB up to :"2012_02_23_00_world_spell_ranks_profession.sql"
+
+Thanks to Zamara, Sulbutx for their continued hard work
+--------------------------------------------------------------
+
+A listing of fixes applied to R01 of Project VorteX_406 20/02/12
+
+Some DB cleanup done and changed info to NEW project name.
+
+
+--------------------------------------------------------------
+A listing of fixes applied to R23-A of CCDB_406 17/02/12
+
+The Public revision is now at the same stage as the Developer release
+so with the addition of so much content the changelog will be a
+brief listing of the huge ammount of additions.
+
+DB Rework including:
+Hundreds of SAI scripts re-wrote
+
+Thousands of:
+Game object corrections, 
+Item corrections, 
+Scripts,
+Creature corrections,
+Quest corrections.
+
+All Skyfire Updates up to "2012_02_08_11_world_misc.sql"  Have also been applied to the DB so no need to 
+use the Updater within the DB Installer.  All Skyfire updates released after "2012_02_08_11_world_misc.sql" 
+will have to be applied manually.
+
+Thanks to Sulbutx, Zamara and the SKYFIRE Team for their help towards this revision
+
+-----------------------------------------------------------------
+
+A listing of fixes applied to R19-A of CCDB_406 11/02/12 - PUBLIC
+
+Enchanting Training Fix
+Relikt Fix
+[Q] The Scarlet Harvest
+4.2 Item removal
+[GO] Added Chogall entrance door
+Removal of Dalaran JC Token
+[Q] Burn It Up... For the Horde!
+Aura fix (Rebase only)
+
+-- GAMEOBJECT
+[GO-LOOT] Scarlet Onslaught Daily Orders: Beach
+[GO-LOOT] Stormwind Locker
+[GO-LOOT] Missing Parts
+[GO-LOOT] Glimmerdeep Clam
+[GO-LOOT] Conch Shell
+[GO-LOOT] Sambino's Air Valve
+[GO-LOOT] Horde Survival Package
+[GO-LOOT] Military Helm
+[GO-LOOT] Hobble's Stray Part
+[GO-LOOT] Keg of Gunpowder
+[GO-LOOT] Rusty Harpoon
+[GO-LOOT] Bloated Kelp Bulb
+[GO-LOOT] Alliance Survival Package
+[GO-LOOT] Coil of Kvaldir Rope
+[GO-LOOT] Idra'kess Weapon Rack
+[GO-LOOT] Deepfin Plunder
+[GO-LOOT] Harkor's Brew Keg
+[GO-LOOT] Harvest Nectar
+[GO-LOOT] Harvest Boar
+[GO-LOOT] Krom'zar's Banner
+[GO-LOOT] The Prince's Chest
+[GO-LOOT] Core Fragment
+[GO-LOOT] Harvest Fruit
+[GO-LOOT] Harvest Fish
+[FIX] Fixed DisplayID for GO "War Golem Part"
+200+ gameobject corrections from sniffs
+
+-- NPC's
+[ADD] Vendor items for Neka
+[ADD] Vendor items for Lokarbo
+[ADD] Vendor items for Murhane
+[ADD] Vendor items for Tex Vortacoil
+[ADD] Vendor items for Kadu
+[ADD] Skin loot for Grizzly Bear
+[ADD] Vendor items for Rembar Bellanne
+[ADD] Skin loot for Redridge Fox Cub
+[ADD] Skin loot for Hill Fox
+[ADD] Skin loot for Highlands Fox
+[FIX] Lvl & money fix for Captain Lancy Revshon
+[FIX] Faction & Lvl fix for Kadu
+[FIX] Loot & lvl fix for Stormwind Rat
+[FIX] Faction fix for Iron Thane Furyhammer
+[FIX] Faction, lvl, flag fix for Quartermaster Dernhak
+[FIX] Pickpocket loot fix for Enslaved Bandit
+[FIX] Pickpocket loot fix for Zin'jatar Pearlbinder
+[FIX] Pickpocket loot fix for Riverpaw Basher
+[FIX] Loot for Overseer Idra'kess
+[FIX] Skin Loot for Orca
+[FIX] Skin Loot for Arctic Grizzly
+[FIX] Skin Loot for Vargul Blighthound
+[FIX] issue #0000043 - NPC Vlagga Freyfeather
+[FIX] issue #0000046 - Apothecary Zelana
+70+ creature template corrections from sniffs
+
+-- QUESTS
+[FIX] quest line corrections and text fixes for "Young Lovers"line Elwynn Forest
+[FIX] quest-24976 Variety is the Spice of Death
+[FIX] a number of dwarf start area issues
+[FIX] PrevQuest, NextQuest and End Quest texts for Hyjal
+[removed]Quest 8555 obsolete.
+
+-- LOCALES
+[ADD]  loc2 to core_string table
+
+-- CORE
+[FIX] Core crashfix and some optimizations for quest Evacuate the Merchant Square
+
+-- SKYFIRE (NEW)
+[FIX] db error - wrong spawn mask
+[FIX] db error - creature_addon
+[FIX] db error - creature_template_addon
+
+(these fixes have been added to the DB update feature)
+Skyfire updated added up to "2012_02_11_00_fishing_loot_template.sql"
+
+Thanks to Nomad, Raydeon, John2308, Sulbutx Zamara and the SKYFIRE Team for their help towards this revision
+
+-----------------------------------------------------------------
+
+A listing of fixes applied to R18-b of CCDB_406 03/02/12 - PUBLIC
+
+-- Vashj'ir fixes --
+-Creatures, Loot and Movements:
+[NPC] Anemone Frenzy
+[NPC] Ravenous Oceanic Broadhead
+[NPC] Redgill Scavenger
+[NPC] Enslaved Alliance Pearl Miner
+[NPC] Deepseeker Crab <Idra'kess Harpooner's Pet>
+[NPC] Enslaved Alliance Mage
+[NPC] Enslaved Horde Pearl Miner
+[NPC] Idra'kess Harpooner
+[NPC] Nespirah Fluid
+[NPC] Idra'kess Prophet
+
+-- The Lost Isle Fixes --
+-Creatures, Loot and Movements
+[NPC] Ancient Island Turtle
+[NPC] Goblin Survivor
+[NPC] Daggertooth Shark
+[NPC] Crab
+[NPC] Island Turtle
+[NPC] Frog
+[NPC] Megs Dreadshredder <Marketing Rep>
+[NPC] Sassy Hardwrench <Your Former Executive Assistant>
+[NPC] Coach Crosscheck <The Bilgewater Buccaneers>
+[NPC] Fizz Lighter <Mage Trainer>
+[NPC] Bamm Megabomb <Hunter Trainer>
+[NPC] Trade Prince Gallywix <Leader of the Bilgewater Cartel>
+[NPC] Ace
+[NPC] Brett "Coins" McQuid <Recovered Supplies>
+[NPC] Candy Cane
+[NPC] Chip Endale
+[NPC] Maxx Avalanche <Shaman Trainer>
+[NPC] Gobber
+[NPC] Grimy Greasefingers <Innkeeper>
+[NPC] Evol Fingers <Warlock Trainer>
+[NPC] Jungle Cat
+[NPC] Bomb-Throwing Monkey
+[NPC] Jumping Monkey
+[NPC] Dead Orc Scout
+[NPC] Pygmy Witchdoctor
+[NPC] Poison Spitter
+[NPC] Frightened Miner
+[NPC] Foreman Dampwick
+[NPC] Freezya
+
+- Quests
+[Q] Bilgewater Cartel Represent
+[Q] Irresistible Pool Pony
+[Q] Surrender or Else!
+[Q] Get Back to Town
+[Q] Get Our Stuff Back!
+[Q] The Enemy of My Enemy
+[Q] Help Wanted
+[Q] Zombies vs. Super Booster Rocket Boots
+[Q] Rocket Boot Boost
+[Q] The Ultimate Footbomb Uniform
+[Q] Monkey Business
+[Q] It's Our Problem Now
+[Q] Orcs Can Write?
+[Q] Miner Troubles
+[Q] Capturing the Unknown
+
+- Other Fixes
+[NPC] Vacillating voidcaller now attackable
+[NPC] Vyral the Vile <Twilight's Hammer>
+[NPC] Twilight Overlord
+[Q] Burning Blade Medallion
+[NPC] Felstalker
+[I] Pockmarked Cloth Bracers
+[GO] Silverbound Treasure Chest
+[NPC] Shardtooth Mauler 
+[Q] Maul 'Em With Kindness
+[NPC] Gormashh the Glutinous
+[NPC] John Shelby
+[NPC] Night Watch Guard
+[Q] Falcon Watch
+[NPC] Maiden of Virtue
+[NPC] Deatholme Necromancer
+[NPC] Twilight Keeper Havunth
+[Q] The Battle Plans
+[Q] Woodpaw Investigation
+[GOSSIPS] Barley
+Heroic Loot Fixes
++ Over 9000 aditional fixes/adjustments for Creature Loot Fixes, SAI Fixes, Waypoints, Factions, Vendor Items and Items
+
+Many Thanks to Zamara, Nomad, Raydeon and Sulbutx and Members of Skyfire for their work towards this revision.
+
+
+Update section in the DB installer now active.  Updates from SKYFIRE are
+included up to "2012_02_03_00_world_creature_text.sql".
+-----------------------------------------------------------------------
+
+A listing of fixes applied to R17 of CCDB_406 20/01/12 - PUBLIC
+
+-- Vashj'ir fixes --
+-Creatures, Loot and Movements:
+[NPC] Coilshell Sifter
+[NPC] Oceanic Broadhead
+[NPC] Anemone Frenzy
+[NPC] Engineer Hexascrub
+[NPC] Divemaster Birmingham
+[NPC] Rockchewer Whelk
+[NPC] Spineshell Pincer
+[NPC] Glimmerdeep Tidehunter
+[NPC] Famished Great Shark
+[NPC] Zin'jatar Pearlbinder
+[NPC] Shimmerspine Harvester
+[NPC] Imprisoned Soldier
+[NPC] Imprisoned Warrior
+[NPC] Zin'jatar Overseer
+[NPC] Zin'jatar Guardian
+[NPC] Lady LaLa <Siren of the Deeps>
+[NPC] Private Pollard
+[NPC] Erunak Stonespeaker
+[NPC] Moanah Stormhoof
+[NPC] Grotto Vole
+[NPC] Greater Fire Elemental <Rendel's Guardian>
+[NPC] Rendel Firetongue <The Earthen Ring>
+[NPC] Gurrok
+[NPC] Whale Shark
+[NPC] Zin'jatar Fathom-Stalker
+[NPC] Greater Earth Elemental
+[NPC] Derth Firesinger <The Earthen Ring>
+[NPC] Farseer Gadra <The Earthen Ring>
+[NPC] Greater Fire Elemental <Earthen Ring Shaman's Guardian>
+[NPC] Toshe Chaosrender <The Earthen Ring>
+[NPC] Fathom-Lord Zin'jatar
+[NPC] Earthen Ring Shaman <The Earthen Ring>
+[NPC] Earthwatcher Waveguard
+[NPC] Fleeing Zin'jatar Fathom-Stalker
+[NPC] Barbfin Skimmer
+
+-Game Objects:
+[GO] Glimmerdeep Clam
+[GO] Stormvine (fixed)
+[GO] Azsharas Veil
+[GO] Obsidium Deposit
+[GO] Stormvine
+
+-Items:
+[I] Volatile Life
+[I] Stormvine
+[I] Lifegiving Seed
+[I] Pilfered Cannonball
+[I] Sunken Cargo
+[I] Stormwind S.E.A.L. Equipment
+[I] Azsharas Veil
+[I] Ashen Pigment
+[I] Burning Embers
+
+-Quests:
+[Q] Art of Attraction
+[Q] Odor Coater
+[Q] Properly Inspired
+[Q] Clamming Up
+[Q] Bellies Await
+[Q] What? What? In My Gut...? [H/A]
+[Q] Across the Great Divide
+[Q] Debriefing
+[Q] Wake of Destruction
+[Q] Decompression [H/A]
+[Q] Come Hell or High Water
+[Q] The Warden's Time
+[Q] Backed Into a Corner
+[Q] The Looming Threat
+[Q] Rundown
+[Q] Silver Tide Hollow
+
+-Other Fixes:
+[Q] Done Nothing Wrong
+[Q] Tanaris is Calling
+[I] Sunscale Feather
+[I] Mystic Cogwheel
+[NPC] Risen Hillsbrad Peasant
+[Q] Clearing the Highlands
+[NPC] Boulderfist Enforcer
+[NPC] Boulderfist Ogre
+[NPC] Skymaster Brightdawn
+[Q] The Traitor Orc 
+[NPC] Brunnhildar Prisoner
+[GO] Demon Portal
+[Q] The Summoning [A/H]
+[Q] Scarlet Armies Approach [A/H]
+[Q] Vile Familiar
+[NPC] Vile Familiar
+[NPC] Fel Stalker
+[Q] Bring Down the High Shaman
+[Q] Territorial Fetish
+[NPC] Scourged Flamespitter
+[NPC] Conquest Hold Raider
+[Q] Blackriver Brawl
+[Q] Blackriver Skirmish
+[Q] Fizzled
+[Q] Margoz
+[Q] Out of Place
+[Q] Skull Rock
+[Q] The Burning Blade
+[Q] The Dranosh'ar Blockade
+[Q] Altered Beings
+[Q] It's Gotta be the Horn
+[Q] Samophlange
+[Q] Miner's Fortune
+[Q] Nugget Slugs
+[Q] Wenikee Boltbucket
+
+-SmartAI Fixes
+Corrected/Added SAI for over 1000 NPCs and Quests
+
++ Many corrections, obsolete data removed and start up errors fixed :)
++ Lots of Daily Quests corrected
++ 100's of Quests corrected in Durotar, Eversong Woods, Ghostlands, Northern Barrens
+
+
+FIXES APPLIED TO REBASE ONLY:
+Two tables added to character DB lfg_data, character_queststatus_seasonal
+Updated to World Db tables, command, game_event_seasonal_questrelation
+13428 Creature addon fixes - By Zamara
+1283 Creature template addon fixes - By Zamara
+
+
+Many Thanks to Zamara, Nomad, Nooblet, Raydeon and Sulbutx and Skyfire for their work towards this revision.
+
+--------------------------------------------------------------------
+
+
+A listing of fixes applied to R16 of CCDB_406 13/01/12 - Public Revision
+
+-- Vashj'ir fixes --
+-Creatures and Loot:
+[NPC] Famished Great Shark
+[NPC] Zin'jatar Pearlbinder
+[NPC] Shimmerspine Harvester
+[NPC] Imprisoned Soldier
+[NPC] Imprisoned Warrior
+[NPC] Zin'jatar Overseer
+[NPC] Zin'jatar Guardian
+[NPC] Lady LaLa <Siren of the Deeps>
+[NPC] Private Pollard
+[NPC] Erunak Stonespeaker
+[NPC] Moanah Stormhoof
+[NPC] Grotto Vole
+[NPC] Greater Fire Elemental <Rendel's Guardian>
+[NPC] Rendel Firetongue <The Earthen Ring>
+[NPC] Gurrok
+[NPC] Whale Shark
+[NPC] Zin'jatar Fathom-Stalker
+[NPC] Greater Earth Elemental
+[NPC] Derth Firesinger <The Earthen Ring>
+[NPC] Farseer Gadra <The Earthen Ring>
+[NPC] Greater Fire Elemental <Earthen Ring Shaman's Guardian>
+[NPC] Toshe Chaosrender <The Earthen Ring>
+[NPC] Fathom-Lord Zin'jatar
+[NPC] Earthen Ring Shaman <The Earthen Ring>
+[NPC] Earthwatcher Waveguard
+[NPC] Fleeing Zin'jatar Fathom-Stalker
+[NPC] Barbfin Skimmer
+
+-Game Objects:
+[GO] Azsharas Veil
+[GO] Obsidium Deposit
+[GO] Stormvine
+
+-Quests:
+[Q] What? What? In My Gut...? [H/A]
+[Q] Across the Great Divide
+[Q] Debriefing
+[Q] Wake of Destruction
+[Q] Decompression [H/A]
+[Q] Come Hell or High Water
+[Q] The Warden's Time
+[Q] Backed Into a Corner
+[Q] The Looming Threat
+[Q] Rundown
+[Q] Silver Tide Hollow
+
+Desolation Hold south barrens NPC spawns and quest corrections
+Many Creature_equipment fixes
+Many missing quests added
+58832 Items adjusted
+Game objects guid reset
+Sturdy Treasure Chest Loot fixed
+Heroic NPC fixes applied
+500+ start-up errors fixed
+[GO] The Eye of Shadra
+[Q] Triage
+[Q] Quest Not On My Watch!
+Battle at Valhalas fixed
+[SAI] Fledgling Brave
+[SAI] Troll start drummer
+[SAI] Tiki Target
+[Q] The Wakening
+[SAI] Pygmy Surf Crawler
+[SAI] Plainstrider
+[NPC] Hoboair <Gryphon Master>
+[Q] Assault on the Rotbrain Encampment
+[NPC] Mindless Zombies
+[NPC] Spirit healers fixed
+[Q] To Speak With Har'koa
+[Q] First Things First: We're Gonna Need Some Beer
+[Q] No More Mercy
+[NPC] King Reaperclaw
+[Q] Welcoming the Wolf Spirit
+[Q] The Ancient Brazier
+[NPC] King Bangalash
+[NPC] Brunnhildar Prisoner
+Many NPC Emotes Fixes 
+[Q] Our Tribe, Imprisoned
+Tauren Start Area Text Fixes
+[NPC] Battleboars
+[NPC] Bristlebacks
+[NPC] Novice Darkspear
+
+Rebase world DB and Char DB also added to the repo.
+
+Special thanks to Nomad, Zamara, Raydeon, Sulbutx, Rochet and Nooblet for their hard work towards this revision :)
+-----------------------------------------------------------------------
+
+A listing of fixes applied to R15 of CCDB_406 03/01/12 - Public Revision
+
+-- Vashj'ir fixes --
+-Creatures and Loot:
+Abyssal Seahorse
+Slitherfin Eel
+Glittergill Grouper
+Frenzied Reef Shark
+Giant Driftray
+Drowning Warrior (h)
+Captain Samir
+Swift Seahorse (Flight Master)
+Cavern Crawler
+Adarrah
+Mack Fearsen
+Zin'jatar Raider
+Ravenous Thresher
+Budd
+Giant Sea Grub
+Akasha
+Slickskin Eel
+Salty Dog
+Undead Officer
+Sabreclaw Skitterer
+Blackfin
+Speckled Sea Turtle
+Gilblin Hoarder
+Gilblin Collector
+Gilblingle
+Earthwatcher Waveguard
+Rendel Firetongue
+Erunak Stonespeaker
+Moanah Stormhoof
+Briglar <Flight Master>
+Francis Greene <Gryphon Master>
+
+-Game Objects:
+Adarrah's Jewelry Box
+Stormwind Locker
+Military Breastplate
+Sunken Cargo
+Pilfered Cannonballs
+Half-buried Footlocker
+
+-Quests:
+Can't Start a Fire Without a Spark
+A Taste For Tail
+A Girl's Best Friend
+Ophidophobia
+Ain't Too Proud to Beg
+Nerve Tonic
+Oh, the Insanity!
+Dah, Nunt... Dah, Nunt...
+DUN-dun-DUN-dun-DUN-dun
+Shark Weak
+Good Deed Left Undone
+Undersea Sanctuary
+Spelunking
+The Abyssal Ride
+Better Late Than Dead
+
+-Misc Random Fixes:
+A massive "GUID" sort out, now much more organized and no overflow. 
+Added over 1200 items 
+Fix language gilnean
+Halls of Origination Tweak
+[NPC] Edlan Halsing
+[NPC] Rogoc
+[NPC] Talric Forthright
+[NPC] Togar
+[GO] Dreaming Glory
+[NPC] Old Blanchy spawn correction
+[NPC] Flightmaster Hoboair faction correction
+[NPC] Farmer Furlbrow spawn Correction
+[NPC] Lieutenant Horatio Laine spawn Correction
+[Q] Hot On the Trail: Murlocs
+[Q] Examiner Andoren Dawnrise <The Reliquary> corrections
+[Q] Krakle <Marshal Expeditions>
+[NPC][Q] Warlord Bloodhilt spawn and quest corrections
+[NPC][Q] Warlord Gar'dul spawn and quest corrections
+[NPC] Innkeeper Lhakadd
+[NPC] Grantor <Stable Master>
+[NPC] Crador <Flight Master>
+[NPC] Quartermaster Dernhak <General Goods>
+[NPC] Terndak <Weapon Vendor>
+[NPC] Crawgol spawn and quest corrections
+[NPC] Tomusa spawn and quest corrections
+[NPC] Calder Gray spawn and quest corrections
+[NPC] Awkward Gangly Orc
+[NPC] Rebecca Blackman <Food & Drink>
+[NPC] Sid Shillcopper <Food & Drink>
+[NPC] Serena Arclight <Engineering Supplies>
+[NPC] Quartermaster Winfred <General Goods>
+[NPC] Turrana <General Goods>
+[Q][GO] His Heart Must Be In It
+[NPC] Donnach <Blacksmithing Supplies>
+[NPC] Gary Henton <Weapon Vendor>
+[NPC] Salaran <Weaponsmith>
+[NPC] Janella <Food & Drink>
+[NPC] Neka <Reagents & Poisons>
+[NPC] Marcy Lewis <Poisons & Reagents>
+[NPC] Lokarbo <Butcher>
+[NPC] Dronk Drophammer <Blacksmithing Supplies>
+[Q] Weapons of War
+[Q] Continue to Stormwind
+[NPC] Young Black Bear
+[Q] Forced to Watch from Afar
+{NPC] Mountaineer Dunstan
+[NPC] Mountaineer Valgrum
+[NPC] Mountaineer Lewin
+[NPC] Tainted Arcane Wraith drop rate correction
+[Q] Wanted: "Hogger"
+[NPC] Drix Blackwrench <The Fixer>
+[NPC] Gnimo <Adventurous Tinker>
+[NPC] Hakmud of Argus <Traveling Trader>
+[NPC] Mojodishu <Traveling Trader>
+[NPC] Harnessed Icemaw Matriarch
+[NPC] Kayaart
+{NPC} Bloodelf Scout Corrections
+[NPC] Human, goblin, draenei, dwarf, gnome commoner's set to seasonal (1 & 41) and Pilgtim Bounty items set to seasonal 41
+[NPC] Crimson Moth, Dire Condor, Forest Moth Inhabit Types and movements set
+
+Also in this HUGE revision
+Removed non-existant spell from npc "Crowley's Horse" (Verified the spell does not exist in 4.0.6a spell.dbc
+Removed incorrect modelid2 and modelid3 for "Twilight Hunters"
+Removed a incorrect spawn gender for "Twilight Hunters"(should only be male creature)
+Update faction for npcs
+Correct unit_class for creatures
+Add missing ModelIDs
+Over 5000 Duplicate's removed
++  Many more.....
+ALL FIXES ARE IN COMPLIENCE OF THE NEW GUID SYSYEM
+
+Thanks to Zamara and Raydeon for their outstanding work in the re-guide changes and Nomad for the contributions made towards this revision :)
+
+
+------------------------------------------------------------
+
+A listing of fixes applied to R14 of CCDB_406 14/12/11 49COP
+
+[Quest] Counter attack
+[Quest] Read the Manual
+[Quest] The Ravaged Caravan
+[Quest] The Black Knight's Curse
+Right npc for do the imp-possible
+Right npcs for the quest open their eyes
+[Quest] Timberling Sprouts
+Fixed some wrong factions in Dun Morogh
+Steamwheedle Shark
+Spawn Lilliam Sparkspindle
+Silverbound Treasure Chest fix
+[Quest] Replacement parts
+[Quest] Rescue the Fallen
+[Quest] Journey has just begun alliance (H/A)
+Greymane Mannor spawns
+Eastern Plaguelands fixes
+[NPC]Crusader_Lord_Valdelmar
+Many quests fixed in Barrens (North & South)
+Over 2500 start up errors/obsolite items removed
+Fixed Gossip for Jahan Hawkwing
+Removed Duplicate Kreenig Snarlsnout
+Removed Duplicate Goblin Commoner's
+Kezan Start area fixes (rebuilding from scratch)
+Creature movements for Barrens (North & South)
+Few fixes made to DK start area
++ many more fixes I didnt have time to list
+
+Many MANY thanks to Wazy, Zamara, Sulbutx, Tiburan, Nomad for their awesome help towards this revision.
+
+------------------------------------------------------------
+
+A listing of fixes applied to R13 of CCDB_406 01/12/11
+
+START UP ERRORS:
+Removed duplicate "script_texts"
+
+QUESTS/ITEMS/GOBJECTS/NPC's and OTHER FIXES
+Shadow Infusion (Rank 1,2,3)
+Malfurion's Gift (Rank 1,2)
+Blood in the Water
+Desecration (Rank 1,2)
+Druid - Starfall
+Twilight Slavedriver
+Twilight Proveditor
+Twilight Hunter
+Twilight Inciter
+Dark Iron Laborer
+Scalding Rock Elemental
+Riverbed Crocolisk
+Schnottz Air Trooper
+Bloodsnarl Hyena
+Gong of Zul'Farrak 
+The Secret of Nahom
+Neltharaku
+Innkeeper Turk
+Halls of Origination NPC's
+Stonecore Flayer
+Stonecore Warbringer
+Shadowy Figure
+Stonecore Earthshaper
+Rock Borer
+Stonecore Sentry
+Stonecore Bruiser
+Stonecore Rift Conjurer
+Stonecore Magmalord
+Elementium Deathplate
+Pieces of the Past
+Introductions Are in Order (Kroth and Banner)
+Exodus
+The Flameseer's Staff
+A Gap in Their Armor
+Neltharaku
+Lightning in a Bottle
+In the Rear With the Gear
+Portal capital in deepholm
+Duke Singen
+Spawn Copper Vein in Lost-Isles
+Rich Elementium Vein
+Elementium Vein - delete duplicate entry on Twilight Highlands & add item loot & spawn Deepholm, Uldum, Tol Barad Peninsula and Tol Barad
+Warrior - Dual Spec
+Life from Death
+Rustine
+Wardens Arrow
+Stormwind - The Stockade
+Grandma's Lost It Alright
+Not Quite Shipshape
+You Can't Take 'Em Alone
+In Need of Ingredients
+Rogue : Training poisons
+Twilight Flamecaller
+Warrior : Plate Specialization
+Chief Engineer Lorthander
+Ghastly Dockhand
+Accursed Supplyman
+Accursed Shipbuilder
+Accursed Longshoreman
+Tauren Shaman - Competence & racial traits
+Spaulders of the Savage Beast
+Charred Staff Fragment
+Felweed
+Stone Bat
+Lost City of the Tol'vir
+Salhet
+Obelisk of the Sun Coffer
+Grandma's Good Clothes
+Forsaken Footsoldier
+Dark Ranger Thyala
+Captain Anson
+Captain Morris
+Shipwright's Tools
+Lucius the Cruel
+Linen-Wrapped Book
+Slain Watchman
+Crate of Mandrake Essence spawn
+Lorna Crowley in The Crowley Orchard
+Prince Liam Greymane in As the Land Shatters
+Lord Godfrey in The Allens' Storm Cellar
+Find Baron Longshore fixed
+King Genn Greymane
+Queen Mia Greymane
+Lor'danel Sentinel
+Skinning Corrections for Corrupted Thistle Bear Matriarch
+Skinning Corrections for Corrupted Thistle Bear
+The Sentinel's Pawn (A/H)
+The Warden's Pawn (A/H)
+The Sentinel's Game (A/H)
+The Warden's Game (A/H)
+Ancient Protectors (A/H)
+The Titans' Trove (A/H)
+Return to Blam (A/H)
+The Spiders Have to Go
+Gaining Acceptance
+Gaining Even More Acceptance
+Dark Iron Residue
+
+-------------------------------------------------------------------------------
+
+A listing of fixes applied to R12 of CCDB_406 28/11/11 48COP
+
+1000+ load up errors fixed
+Spell: Atonement rank 1 & 2 corrections
+Spell: Chains Of Ice corrections
+Spell: Judgements of the Bold corrections
+Spell: Word of Glory corrections
+Spell: Selfless Healer corrections
+NPC: Injured Eathen
+Game Object: Twilight Documents
+Game Object: Catapult Parts
+Relocated NPC Avalanchion and Millhouse Manastorm
+Quest: Bring Down the Avalanche
+Quest: One with the Ground
+Quest: Fixer Upper
+Quest: Battlefront Triage
+Quest: Rush Delivery
+Quest: Stonefather's Boon
+Quest: The Very Earth Beneath Our Feet
+Quest: On Even Ground
+Item: Totem of Impact
+NPC: The Lone Hunter
+Quest: Timberling Sprout
+Quest: The Coming Dawn
+Quest: The Refusal of the Aspects
+Quest: Planting the Heart
+NPC: Tarindrella
+NPC: Corrupted Minion
+NPC: Serendia Oakwhisper
+NPC: Laird
+Quest: Druid of the Claw
+NPC: Dentaria Silverglade
+Game Object: Champions Hall Door Removed
+Started the Vashj'ir Zone (Npc's Spawning, Quest's, Game Objects e.t.c) 
+Orgrimmar re-spawned
+
+French Locals Added.  
+Also some of Italian and Spanish locals
+
++ Many other fixes
+
+Special thanks to Zamara, Sulbutx, Nomad, Nooblet, Skyfire for the contributions in this revision.
+
+-------------------------------------------------------------------------------
+
+A listing of fixes applied to R11 of CCDB_406 24/11/11
+
+(in brief as there are so many)
+
+Guid's for Game objects reset to tidy up table.
+Deepholm quest chain starting at Where's Goldmine? fixed
+Various Deepholm Npc's fixed
+Some more Deepholm quests fixed
+Thunderstone game object in Deepholm spawned
+Item - totem of the plains fixed
+Reforge fixed
+Lots of Gilneas adjustments
+Spell - Selfless Healer fixed
+Few DK starting area adjustments
+
+Thanks to Nomad, Zamara, sulbutx, John2385 and Lorac for their hard work.
+
+-------------------------------------------------------------------------------
+
+A listing of fixes applied to R10 of CCDB_406 23/11/11
+
+More Gilneas Duplicates removed
+Gilneas Class quests fixed
+Removed some more duplicates in Deepholm
+NPC Zabrox
+Various HP modifications
+NPC Tina Skyden
+NPC Lodestone Elemental
+tolbarad_1
+NPC Ysondre
+Chain quest A vision of Twilight [A/H]
+Item Totem of Lightning
+[Q] Jack Likes His Drink
+Tapper Swindlekeg
+Ipfelkofer Ironkeg
+Olga, the Scalawag Wench
+[Q] [A/H] Ring of Blood
+Gurghthock
+Mogor
+Brokentoe
+Murkblood Twin
+Rokdar the Sundered Lord
+Skra'gath
+Warmaul Champion
+Achievement: G.N.E.R.D. Rage
+[Q] Maintaining Discipline
+Exhausted Vrykul
+Captive Vrykul
+[Q] [A/H] The Skettis Offensive
+Defender Grashna
+Minion of Terokk
+Avatar of Terokk
+[Q] A Carver and a Croaker
+Scalawag Frog
+[Q] Rivenwood Captives
+Riven Widow Cocoon
+Freed Winterhoof Longrunner
+[Q] Elixir of Pain
+Stanley
+[Q] [A/H] Cleansing of the Orb of Orahil
+[Q] [A/H] Mana Surges
+Tabetha
+Mana Surge
+Achievement: Turkey Lurkey
+
+also many 
+Misc creature updates
+Misc Vehicle updates
+Misc Gossip updates
+Misc Vendor updates
+
+---------------------------------------------------------------------------------------
+
+A listing of fixes applied to R9 of CCDB_406 21/11/11
+
+Additional Duplicates removes from Deepholm and Chillwind Camp which were missed
+
+---------------------------------------------------------------------------------------
+
+A listing of fixes applied to R8 of CCDB_406 21/11/11 - 47COP
+
+GILNEAS CLEANUP
+Removed double Prince Liam
+City guards phasemasks
+Removed all double initial spawns
+Quest Something's amiss correct questgiver
+Quest Last chance at humanity minlevel fix
+Removed all double gameobject spawns
+
+MISC FIXES
+Quest Fresh out of the grave
+Hallow's End emote quest fixes
+Quest Mystery of the Sarcen Stone
+Talrendis Saboteur fix
+Quest Lefty Loosey, Righty Tighty
+
+TABLE OVERHAUL
+spell_group_stack_rules
+spell_group
+spell_dbc
+
+Also removed a few DB Tables which are no longer needed. 
+
+Thanks to John2380, Nomad and Lorac for their hard work for this revision.
+ 
+------------------------------------------------------------------------------------------
+
+A listing of fixes applied to R7 of CCDB_406 20/11/11
+
+Deepholm Zone REDO completed, removed duplicate spawns and over populated npc's
+Chillwind Camp Duplicate spawns removed
+Started Tol Barrad Redo
+Quest The Last of her kind
+Deepholm factions fixed
+Lots of DB load up errors fixed
+
+Thanks to Zamara, Skyfire for the contributions in this release.
+
+-------------------------------------------------------------------------------------------
+
+A listing of fixes applied to R6 of CCDB_406 18/11/11
+
+A redo of Deepholm Zone, removed duplicate spawns and over populated npc's (still W.I.P, over 600 removed)
+Quest - I'm stuck in this Damned Cage... But Not For Long! (Plus relevant Npc's)
+Quest - Fear no evil
+Wooly Mammoth drop rate fix to blizzlike for Thick Mammoth Hide & Northern Ivory 
+Island Shoveltusk drop rate fix for items Island Shoveltusk Meat & Northern Ivory
+Quest - Fresh out of the Grave Fixed
+Quest - Extinguishing Hope (plus vineyard triggers)
+NPC-The RP-GG (Table adjustments and fixes)
+Spell proc cooldown for Item - Hunter T9 4P Bonus
+Areatrigger Warsong Farms
+Areatrigger Ravenholdt
+Areatrigger Aldurthar Gate
+Add Formula: "Enchant Cloak - Superior Arcane Resistance" to Frostbrood Spawn & Cult Researcher
+Narain's Scrying Goggles drop rate fix 
+Add item "Heavy Scorpid Vest" to Shadowsworn Thug and remove from Portal Seeker
+Removed "Scarlet Cannonball" drop from NPC'S
+"Drakkari Offerings" now drops when NOT on a quest
+Add Orders from Kael'thas to Daughter of Destiny, Gan'arg Warp-Tinker, Mo'arg Warp-Master
+Removed Netherweave Bandage & Manual: Heavy Netherweave Bandage from vendors
+Reference loot table changed for: Flimsy Female Blood Elf Mask, Flimsy Female Draenei Mask, Flimsy Male Blood Elf Mask, Flimsy Male Draenei Mask, Penny Pouch, and Hallowed Helm
+Deep Jormungar now drops "Jormungar Egg Sac"
+Spell-Judgments of the bold
+Spell-Cleanse
+Spell-Word of glory
+Quest-Northern Cloth Scavenging
+Plus a redo of the Human start area
+
+Thanks to Zamara, Nomad (Viper), Skyfire  for a lot of the above work....
+
+----------------------------------------------------------------------------------------------
+
+A listing of fixes applied to R5 of CCDB_406 17/11/11
+
+Agro for Felstalker's
+Quest: Vile Familiars and also set correct casting and movement for the npc's.
+NPC-Rhea
+NPC-General Twinbraid
+NPC-Dorn Redearth
+NPC-Marley Twinbraid
+NPC-Ysondre
+NPC-Eridan Bluewind
+NPC-Alton Redding
+NPC-Kriggon Talsone
+NPC-Dorgok
+NPC-Sharth Voldoun
+NPC-Ezekiel
+Fixed double spawn Overlord Runthak
+Quest board double spawn
+NPC-Malfurion Stormrage
+Berserker Stance
+Defensive Stance
+Heroic Strike
+Runeforging on Worgen and Goblin
+Druid: issues with stealth in cat form
+Warlock: Health Stone and Summon Infernal Fixed
+Warrior: The talent Sudden Death does not reset the cooldown of your Colossus Smash.
+Zapped Giant
+Edna Hatetalon
++ Various other Fixes
+
+Thanks to Zamara, Nomad (Viper), Plagueware, Wazy for the above work....
